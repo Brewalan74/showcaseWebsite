@@ -1,3 +1,72 @@
 html {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    --color-font: black;
+    --color-HeadingFooter: darkred;
+    --color-button: lightcoral;
+}
+
+body {
+    background-color: darksalmon;
+}
+
+/*
+*** HEADING ***
+*/
+.headingContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-HeadingFooter);
+    width: 100%;
+}
+
+.firstHeading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imgHeading {
+    margin: 2rem;
+    width: 150px;
+}
+
+.masterTitle {
+    font-size: 2.5rem;
+    margin: 2rem 1rem;
+    font-weight: bold;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+.secondHeading {
+    display: flex;
+}
+
+.inlineHeading {
+    display: flex;
+    justify-content: flex-start;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-button);
+    margin: 0.1rem;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--color-font);
+    color:var(--color-HeadingFooter);
+    font-weight: bold;
+    box-shadow: 5px 5px 5px var(--color-font);
+    border-radius: 25% 10%;
+    font-size: 1.5rem;
 }
